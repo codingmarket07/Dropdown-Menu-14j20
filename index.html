@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dropdown Menu using HTML CSS and Javascript</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+	<div class="navbar">
+		<div class="logo">
+			<a href="#">Coding Market</a>
+		</div>
+		<div class="nav_right">
+			<ul>
+				<li class="nr_li dd_main">
+					<img src="profile_pic.png" alt="profile_img">
+					
+					<div class="dd_menu">
+						<div class="dd_left">
+							<ul>
+								<li><i class="fas fa-map-marker-alt"></i></li>
+								<li><i class="far fa-star"></i></li>
+								<li><i class="far fa-plus-square"></i></li>
+								<li><i class="fas fa-cog"></i></li>
+								<li><i class="fas fa-download"></i></li>
+								<li><i class="fas fa-sign-out-alt"></i></li>
+							</ul>
+						</div>
+						<div class="dd_right">
+							<ul>
+								<li>Location</li>
+								<li>Favorites</li>
+								<li>Addpeople</li>
+								<li>Settings</li>
+								<li>Downloads</li>
+								<li>Logout</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="nr_li">
+					<i class="fas fa-envelope-open-text"></i>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>	
+
+<script>
+	var dd_main = document.querySelector(".dd_main");
+
+	dd_main.addEventListener("click", function(){
+		this.classList.toggle("active");
+	})
+</script>
+	
+</body>
+</html>
